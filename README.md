@@ -18,6 +18,10 @@ Node-sass contains pre-compiled binaries. The patch disable the binding connecti
 
 The patch uses `Q` node package module for using the promises. Make sure you've installed this package before running the patch. You can install this by running `$ npm install q --save-dev`. 
 
+### Run the patch
+
+When gulp-sass is installed you can run the patch `rebuild-node-sass/rebuild-node-sass.js` in a node environment, for instance `$ node ./rebuild-node-sass/rebuild-node-sass.js`
+
 ### An example of package.json
 
 When you want this patch to run automatically when `npm install` is invoked, you can use the `postinstall` hook to run when all modules are installed. For example:
