@@ -14,17 +14,17 @@ The error looks like this:
 Node-sass contains pre-compiled binaries. The patch disable the binding connection when installing the dependencies of node-sass. When all dependencies are installed correctly the patch enables the binding again and tries to rebuild the binaries. After all binaries are rebuild, the files are copied to the gulp-sass dependency module node-sass.
 
 
-### Before using this patch
+### Before using the patch
 
-The patch uses `Q` node package module for using the promises. Make sure you've installed this package before running the patch. You can install this by running `$ npm install q --save-dev`. 
+The patch uses `Q` node package module for using the promises. Make sure you've installed the package before running the patch. You can install `Q` by running `$ npm install q --save-dev`. 
 
 ### Run the patch
 
 When gulp-sass is installed you can run the patch `rebuild-node-sass/rebuild-node-sass.js` in a node environment, for instance `$ node ./rebuild-node-sass/rebuild-node-sass.js`
 
-### An example of package.json
+### package.json
 
-When you want this patch to run automatically when `npm install` is invoked, you can use the `postinstall` hook to run when all modules are installed. For example:
+When you want this patch to run automatically after the `npm install` command, you can use the `postinstall` hook. The [postinstall script hook](https://docs.npmjs.com/misc/scripts) is called after all package modules are installed. An Example:
 
 	{  
 	  "name": "package-name",  

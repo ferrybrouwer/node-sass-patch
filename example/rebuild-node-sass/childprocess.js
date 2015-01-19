@@ -4,7 +4,7 @@ var exec = require('child_process').exec,
 /**
  * Start child process
  *
- * @author Ferry Brouwer <ferry@happy-online.nl>
+ * @author Ferry Brouwer <ferry.brouwer@gmail.com>
  * @param {string} cmd
  * @param {boolean} silence
  * @returns {promise|Q.promise}

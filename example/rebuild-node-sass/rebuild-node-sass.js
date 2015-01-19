@@ -2,7 +2,7 @@
  * This is a temporary fix `gulp-sass` package module dependency `node-sass` for node v0.11.13 and v0.11.14
  * Rebuild `node-sass` package dependency module prevent exit code 1 when installing package modules.
  *
- * @author Ferry Brouwer <ferry@happy-online.nl>
+ * @author Ferry Brouwer <ferry.brouwer@gmail.com>
  * @see https://github.com/sass/node-sass
  */
 

@@ -5,7 +5,7 @@ var fs = require('fs'),
 /**
  * Toggle line comment
  *
- * @author Ferry Brouwer <ferry@happy-online.nl>
+ * @author Ferry Brouwer <ferry.brouwer@gmail.com>
  * @param {string}              filePath
  * @param {string|number}       line
  * @param {boolean}             addComment
